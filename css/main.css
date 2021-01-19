@@ -896,8 +896,6 @@ main .contact {
           transition: .5s;
           padding-top: 20px; }
 
-footer .row {
-  width: 100%; }
 footer .ft {
   border-bottom: 1px solid #D7D7D7; }
   footer .ft .container {
@@ -1235,6 +1233,9 @@ footer .join_us {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+    footer .ft .container .list .title,
+    footer .ft .container .contact .title {
+      padding-bottom: 0; } }
 
 /*# sourceMappingURL=main.css.map */
