@@ -280,7 +280,7 @@ header {
         }
     }
     .banner {
-        background: linear-gradient(96.72deg, rgba(0, 47, 115, 0.6) 36.03%, rgba(31, 30, 39, 0) 108.98%), url('./img/banner_bg.jpg') no-repeat;
+        background: linear-gradient(96.72deg, rgba(0, 47, 115, 0.6) 36.03%, rgba(31, 30, 39, 0) 108.98%), url('/img/banner_bg.jpg') no-repeat;
         background-size: cover;
         position: relative;
         width: 100%;
@@ -543,7 +543,7 @@ main {
     }
     .service {
         padding: 8.4% 0;
-        background: url("./img/bg_service.jpg") no-repeat center;
+        background: url('/img/bg_service.jpg') no-repeat center;
         .container {
             .row {
                 .col-md-5 {
@@ -771,7 +771,7 @@ main {
         }
     }
     .customer {
-        background: url('./img/partner_bg.png') no-repeat center, linear-gradient(180deg, rgba(255, 255, 255, 0) 15.79%, #FFFFFF 103%);
+        background: url('/img/partner_bg.png') no-repeat center, linear-gradient(180deg, rgba(255, 255, 255, 0) 15.79%, #FFFFFF 103%);
         background-size: cover;
         padding: 7vw 0;
         .container {
@@ -923,7 +923,7 @@ main {
         }
     }
     .contact {
-        background: url('./img/bg_service.jpg') center;
+        background: url('/img/bg_service.jpg') center;
         background-color: #265bc5;
         background-blend-mode: soft-light;
         padding: 3.2% 0;
