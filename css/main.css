@@ -555,6 +555,15 @@ main .about_us {
 main .service {
   padding: 8.4% 0;
   background: url("/img/bg_service.jpg") no-repeat center; }
+  main .service .container .title {
+    display: none;
+    font-family: "Mulish", sans-serif;
+    font-size: 6vw;
+    line-height: 49px;
+    font-weight: 900;
+    color: #303030;
+    padding: 5% 0 3%;
+    text-align: center; }
   main .service .container .row .col-md-5 {
     cursor: pointer;
     background: #F8F8F8;
@@ -1000,6 +1009,8 @@ footer .join_us {
   z-index: 9999;
   padding: 21px;
   color: #fff;
+  background-color: #265BC5;
+  border: 2px solid #ee1f2200;
   border-radius: 100%;
   text-align: center; }
 
@@ -1012,8 +1023,9 @@ footer .join_us {
   font-size: 25px; }
 
 #toTopBtn:hover {
-  background: #333;
-  color: #fff !important;
+  border: 2px solid #EE1F23;
+  background: #EE1F23;
+  color: white;
   -webkit-box-shadow: 0 0 20px #c4c4c4;
   box-shadow: 0 0 20px #c4c4c4;
   -webkit-transition: all .3s ease-in-out;
@@ -1044,6 +1056,11 @@ footer .join_us {
 
 /* back to top  */
 @media (max-width: 1200px) {
+  header .nav .containner .logo {
+    left: 8%; }
+    header .nav .containner .logo p {
+      font-size: 1.1vw; }
+
   main .customer .container .slide_cus .cus {
     height: auto; }
   main .contact .container {
@@ -1069,7 +1086,7 @@ footer .join_us {
       header .nav .containner .logo img {
         padding-top: 0; }
       header .nav .containner .logo p {
-        font-size: 1.3vw; }
+        font-size: 1.35vw; }
     header .nav .containner .contact {
       display: none; }
     header .nav .containner .menu_res {
@@ -1082,8 +1099,8 @@ footer .join_us {
       width: 100%;
       text-align: center; }
       header .banner .content .introduce div {
-        font-size: 3vw;
-        line-height: 4vw; }
+        font-size: 4vw;
+        line-height: 4.5vw; }
       header .banner .content .introduce p {
         font-size: 13px; }
       header .banner .content .introduce .gr_btn {
@@ -1131,7 +1148,7 @@ footer .join_us {
     main .service .containner .row .col-md-5 {
       margin-bottom: 2%; }
   main .customer {
-    padding: 5vw 0; }
+    padding: 7vw 0; }
     main .customer .container .title {
       font-size: 35px; }
       main .customer .container .title p {
@@ -1176,9 +1193,11 @@ footer .join_us {
     header .nav .containner .logo img {
       width: 17vw; }
     header .nav .containner .logo p {
-      font-size: 2vw; }
+      font-size: 2.4vw; }
     header .nav .containner .opennav {
       display: flex; }
+  header .banner .content .introduce .gr_btn {
+    padding-top: 4%; }
   header .banner .content .social {
     display: none; }
   header .banner .scroll_next {
@@ -1201,6 +1220,8 @@ footer .join_us {
       text-align: center; }
       main .about_us .container .content div .title {
         padding-bottom: 15px; }
+  main .service .container .title {
+    display: block; }
   main .news {
     padding: 10vw 0; }
     main .news .container .news_item .item .content {

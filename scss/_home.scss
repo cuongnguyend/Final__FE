@@ -545,6 +545,16 @@ main {
         padding: 8.4% 0;
         background: url('/img/bg_service.jpg') no-repeat center;
         .container {
+            .title {
+                display: none;
+                font-family: "Mulish", sans-serif;
+                font-size: 6vw;
+                line-height: 49px;
+                font-weight: 900;
+                color: #303030;
+                padding: 5% 0 3%;
+                text-align: center;
+            }
             .row {
                 .col-md-5 {
                     cursor: pointer;
@@ -1114,8 +1124,8 @@ footer {
     z-index: 9999;
     padding: 21px;
     color: #fff;
-    // border: 2px solid $primaryColor;
-    // background-color: $primaryColor;
+    background-color: #265BC5;
+    border: 2px solid #ee1f2200;
     border-radius: 100%;
     text-align: center;
 }
@@ -1130,8 +1140,9 @@ footer {
 }
 
 #toTopBtn:hover {
-    background: #333;
-    color: #fff !important;
+    border: 2px solid #EE1F23;
+    background: #EE1F23;
+    color: white;
     -webkit-box-shadow: 0 0 20px #c4c4c4;
     box-shadow: 0 0 20px #c4c4c4;
     -webkit-transition: all .3s ease-in-out;
