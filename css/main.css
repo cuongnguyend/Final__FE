@@ -409,9 +409,10 @@ header .banner {
         padding-top: 7%;
         padding-bottom: 0;
         display: flex;
-        width: fit-content; }
-        header .banner .content .introduce .gr_btn:hover a {
-          width: 50px; }
+        width: fit-content;
+        transition: .5s; }
+        header .banner .content .introduce .gr_btn:hover {
+          margin-left: 15px; }
         header .banner .content .introduce .gr_btn button {
           padding: 14px 51px;
           font-family: "Mulish", sans-serif;
@@ -429,8 +430,7 @@ header .banner {
           width: 40px;
           justify-content: center;
           display: flex;
-          align-items: center;
-          transition: .4s; }
+          align-items: center; }
     header .banner .content .social {
       align-self: flex-end;
       display: flex;
@@ -530,9 +530,10 @@ main .about_us {
         padding-bottom: 0;
         display: flex;
         width: fit-content;
-        padding-top: 20px; }
-        main .about_us .container .content .gr_btn:hover a {
-          width: 50px; }
+        padding-top: 20px;
+        transition: .5s; }
+        main .about_us .container .content .gr_btn:hover {
+          margin-left: 15px; }
         main .about_us .container .content .gr_btn button {
           padding: 14px 51px;
           font-family: "Mulish", sans-serif;
@@ -550,8 +551,7 @@ main .about_us {
           width: 40px;
           justify-content: center;
           display: flex;
-          align-items: center;
-          transition: .4s; }
+          align-items: center; }
 main .service {
   padding: 8.4% 0;
   background: url("/img/bg_service.jpg") no-repeat center; }
