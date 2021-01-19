@@ -1140,6 +1140,21 @@ footer .join_us {
     main .contact .container .row .item a {
       padding-top: 5px; } }
 @media (max-width: 768px) {
+  main .about_us .container {
+    flex-direction: column; }
+    main .about_us .container .img {
+      width: 100%; }
+      main .about_us .container .img .note {
+        width: 40vw; }
+        main .about_us .container .img .note p {
+          font-size: 2.4vw; }
+    main .about_us .container .content {
+      width: 100%;
+      padding: 0;
+      padding-top: 10%;
+      text-align: center; }
+      main .about_us .container .content div .title {
+        padding-bottom: 15px; }
   main .service {
     background-size: cover;
     background-position: center; }
@@ -1203,21 +1218,6 @@ footer .join_us {
     border-right: 25px solid transparent;
     border-bottom: 28px solid white; }
 
-  main .about_us .container {
-    flex-direction: column; }
-    main .about_us .container .img {
-      width: 100%; }
-      main .about_us .container .img .note {
-        width: 40vw; }
-        main .about_us .container .img .note p {
-          font-size: 2.4vw; }
-    main .about_us .container .content {
-      width: 100%;
-      padding: 0;
-      padding-top: 10%;
-      text-align: center; }
-      main .about_us .container .content div .title {
-        padding-bottom: 15px; }
   main .service .container .title {
     display: block; }
   main .news {
