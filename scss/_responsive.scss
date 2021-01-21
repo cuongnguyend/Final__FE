@@ -37,13 +37,15 @@
     header {
         .contact_res {
             display: flex;
-            width: 95%;
+            width: 100%;
             margin: 0 auto;
             background: #F8F8F8;
+            padding: 0 2%;
         }
         .nav {
             .containner {
                 width: 95%;
+                padding: 1% 0;
                 justify-content: space-between;
                 margin: 0 auto;
                 .clippath {
@@ -57,6 +59,7 @@
                     }
                     p {
                         font-size: 1.35vw;
+                        padding-bottom: 0;
                     }
                 }
                 .contact {
@@ -64,6 +67,7 @@
                 }
                 .menu_res {
                     display: block;
+                    align-self: flex-end;
                 }
             }
         }
@@ -76,8 +80,9 @@
                 .introduce {
                     width: 100%;
                     text-align: center;
+                    padding: 0 10%;
                     div {
-                        font-size: 4vw;
+                        font-size: 3.3vw;
                         line-height: 4.5vw;
                     }
                     p {
@@ -88,9 +93,6 @@
                         width: auto;
                         button {
                             padding: 10px 30px;
-                        }
-                        &:hover a {
-                            width: 40px;
                         }
                         a {
                             width: 30px;
@@ -156,6 +158,29 @@
                 }
             }
         }
+        .news {
+            .container {
+                .news_item {
+                    .item {
+                        .content {
+                            padding: 2% 1% 5%;
+                            border-bottom: none;
+                        }
+                        .option {
+                            border-bottom: .5px solid rgba(168, 168, 168, 0.562);
+                            padding: 2% 1%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .ft {
+            .container {
+                padding: 5% 0;
+            }
+        }
     }
 }
 
@@ -199,7 +224,7 @@
         }
         .customer {
             // background: geya;
-            padding: 7vw 0;
+            padding: 10vw 0 12vw;
             .container {
                 .title {
                     font-size: 35px;
@@ -236,8 +261,34 @@
                         }
                     }
                     .slick-dots {
-                        bottom: -3vw;
+                        bottom: -7vw;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                     }
+                }
+            }
+        }
+        .news {
+            padding: 10vw 0;
+            .container {
+                .news_item {
+                    .item {
+                        .content {
+                            padding: 2% 0 5%;
+                            border-bottom: none;
+                        }
+                        .option {
+                            border-bottom: .5px solid rgba(168, 168, 168, 0.562);
+                            padding: 2% 0;
+                        }
+                    }
+                }
+            }
+        }
+        .contact {
+            .container {
+                .title {
+                    font-size: 35px;
                 }
             }
         }
@@ -247,10 +298,10 @@
             .container {
                 .row {
                     .company {
-                        text-align: center;
                         img {
-                            width: auto;
-                            padding-bottom: 20px;
+                            width: 30%;
+                            padding-bottom: 40px;
+                            align-self: center;
                         }
                     }
                 }
@@ -306,24 +357,38 @@
     }
     main {
         .service {
+            padding-bottom: 13%;
             .container {
                 .title {
                     display: block;
                 }
             }
         }
-        .news {
-            padding: 10vw 0;
+        .contact {
             .container {
-                .news_item {
-                    .item {
-                        .content {
-                            padding: 2% 0 5%;
-                            border-bottom: none;
-                        }
-                        .option {
-                            border-bottom: .5px solid rgba(168, 168, 168, 0.562);
-                        }
+                .title {
+                    font-size: 25px;
+                }
+            }
+        }
+        .about_us {
+            .container {
+                .img {
+                    .note {
+                        width: 80%;
+                        right: 0;
+                    }
+                }
+                .content div {
+                    .title {
+                        font-size: 35px;
+                    }
+                    p {
+                        text-align: left;
+                    }
+                    .auth {
+                        padding-bottom: 0;
+                        text-align: center;
                     }
                 }
             }
@@ -332,14 +397,21 @@
     footer {
         .ft {
             .container {
+                .row {
+                    margin: 0 !important;
+                }
                 .list,
-                .contact {
-                    width: 100%;
+                .contact,
+                .company {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     .title {
                         padding-bottom: 0;
+                    }
+                }
+                .list {
+                    ul li {
+                        display: inline;
                     }
                 }
             }

@@ -6,19 +6,10 @@ $font_open: 'Open Sans',
 sans-serif;
 $font_muli: 'Mulish',
 sans-serif;
-@keyframes drop {
-    from {
-        transform: translateX(-50%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
 header {
     .contact_res {
         display: none;
-        // display: flex;
+        position: absolute;
         flex-direction: row;
         justify-content: flex-end;
         padding: 5px 0;
@@ -66,7 +57,7 @@ header {
                 justify-content: center;
                 text-align: center;
                 i {
-                    font-size: 3.5vw;
+                    font-size: 4.5vw;
                     position: relative;
                     color: black;
                 }
@@ -109,51 +100,53 @@ header {
                 // }
             }
             .menu_responsive {
-                display: none;
                 position: fixed;
                 width: 100%;
                 height: 100vh;
                 z-index: 999;
                 top: 0;
-                overflow: auto;
-                animation: drop .7s;
-                transition: .7s;
-                .container {
+                left: -100%;
+                background: #070D1F;
+                transition: ease 0.5s;
+                padding: 1.5rem 0;
+                .nav_content {
                     display: flex;
                     flex-direction: column;
-                    width: 40%;
-                    height: 100%;
-                    position: absolute;
-                    background: rgba(0, 0, 0, 0.705);
                     a {
-                        padding: 10px;
-                        padding-left: 0;
+                        padding: 20px;
                         width: fit-content;
                         color: white;
                         font-weight: 600;
                         text-decoration: none;
                         transition: .5s;
+                        overflow-x: visible;
                         &:first-child {
                             margin-top: 20px;
                         }
                         &:hover {
-                            color: #EE1F23;
-                            padding-left: 10px;
+                            color: #3167d3;
+                            padding-left: 30px;
                         }
                     }
                     .closenav {
+                        position: absolute;
                         cursor: pointer;
                         text-align: end;
                         display: flex;
                         align-self: flex-end;
                         color: white;
-                        font-size: 15px;
-                        margin-top: 10px;
+                        right: 1.5rem;
+                        padding: .25rem;
+                        background-color: #282B3A;
+                        border-radius: 50%;
                     }
                     .active {
-                        color: #EE1F23;
+                        color: #3167d3;
                     }
                 }
+            }
+            .show {
+                left: 0;
             }
             display: flex;
             justify-content: flex-end;
@@ -556,7 +549,7 @@ main {
                 text-align: center;
             }
             .row {
-                .col-md-5 {
+                .item {
                     cursor: pointer;
                     background: #F8F8F8;
                     padding: 48px 57px 46px 52px;
@@ -1000,7 +993,7 @@ footer {
                     font-size: 16px;
                     line-height: 22px;
                     color: #303030;
-                    padding-bottom: 20px;
+                    padding-bottom: 10px;
                 }
                 .des {
                     font-style: normal;
@@ -1119,6 +1112,7 @@ footer {
 
 #toTopBtn {
     position: fixed;
+    display: none;
     bottom: 5%;
     right: 7%;
     z-index: 9999;

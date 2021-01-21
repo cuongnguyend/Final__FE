@@ -1,5 +1,11 @@
 $(document).ready(function() {
-
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 50) {
+            $('#toTopBtn').show("fast");
+        } else {
+            $('#toTopBtn').hide("fast");
+        }
+    });
     $('#toTopBtn').click(function() {
         $("html, body").animate({
             scrollTop: 0
@@ -8,15 +14,13 @@ $(document).ready(function() {
     });
     // back top top
 
-    $('.openNav').click(function() {
-        $('.navv').show();
-        $('.openNav').hide();
-        $('.closeNav').show();
+    $('.opennav').click(function() {
+        $('.menu_responsive ').animate({ width: '100%' });
+        $('.opennav').hide();
     });
-    $('.closeNav').click(function() {
-        $('.navv').hide();
-        $('.closeNav').hide();
-        $('.openNav').show();
+    $('.closenav').click(function() {
+        $('.menu_responsive').animate({ width: '0' });
+        $('.opennav').show(100);
     });
 
     // scrol next 
@@ -31,14 +35,6 @@ $(document).ready(function() {
     });
     // scrol next 
 
-    // var d = new Date();
-
-    // var month = d.getMonth() + 1;
-    // var day = d.getDate();
-
-    // $('.date').text() = d.getFullYear() + '/' +
-    //     (month < 10 ? '0' : '') + month + '/' +
-    //     (day < 10 ? '0' : '') + day;
     $(window).resize(function() {
             var width = $(window).width();
             if (width < 992) {
@@ -46,23 +42,17 @@ $(document).ready(function() {
             }
         })
         .resize();
-    $('.opennav').click(function() {
-        $('.menu_responsive').show();
-        $('.opennav').hide();
-    });
-    $('.closenav').click(function() {
-        $('.opennav').show();
-        $('.menu_responsive').hide();
-    });
 
-    // $(document).mouseup(function(e) {
-    //     var container = $(".menu_responsive");
-    //     var open = $('.opennav');
-    //     if (!container.is(e.target) && !open.is(e.target) && container.has(e.target).length === 0) {
-    //         container.hide();
-    //         $('.overlay').hide();
-    //         $('.opennav').show();
-    //     }
-    // });
+    const navMenu = $('#menu_responsive'),
+        toggleMenu = $('#opennav'),
+        closeMenu = $('#closenav')
+
+
+    toggleMenu.click(function() {
+        navMenu.toggleClass("show", "fast");
+    });
+    closeMenu.click(function() {
+        navMenu.removeClass("show");
+    });
 
 });
