@@ -458,6 +458,7 @@ header .banner {
       transform: translate(-50%, 0); }
 
 main .about_us {
+  overflow: hidden;
   padding: 8% 0; }
   main .about_us .container {
     display: flex;
@@ -547,12 +548,13 @@ main .about_us {
           display: flex;
           align-items: center; }
 main .service {
+  overflow: hidden;
   padding: 8.4% 0;
   background: url("/img/bg_service.jpg") no-repeat center; }
   main .service .container .title {
     display: none;
     font-family: "Mulish", sans-serif;
-    font-size: 6vw;
+    font-size: 26px;
     line-height: 49px;
     font-weight: 900;
     color: #303030;
@@ -605,6 +607,7 @@ main .service {
     main .service .container .row .service2:hover .icon img {
       filter: none !important; }
 main .news {
+  overflow: hidden;
   padding: 7vw 0; }
   main .news .container .title {
     text-align: center;
@@ -729,6 +732,7 @@ main .news {
       align-items: center;
       transition: .4s; }
 main .customer {
+  overflow: hidden;
   background: url("/img/partner_bg.png") no-repeat center, linear-gradient(180deg, rgba(255, 255, 255, 0) 15.79%, #FFFFFF 103%);
   background-size: cover;
   padding: 7vw 0; }
@@ -831,6 +835,7 @@ main .customer {
         border: 0.5px solid #265BC5;
         border-radius: 100%; }
 main .partner {
+  overflow: hidden;
   padding: 2% 0; }
   main .partner .content {
     display: flex;
@@ -853,6 +858,7 @@ main .partner {
           filter: grayscale(20%) brightness(100%) contrast(1);
           transform: scale(1.02); }
 main .contact {
+  overflow: hidden;
   background: url("/img/bg_service.jpg") center;
   background-color: #265bc5;
   background-blend-mode: soft-light;
@@ -1241,6 +1247,10 @@ footer .join_us {
       display: block; }
   main .contact .container .title {
     font-size: 25px; }
+  main .contact .container .row .item img {
+    width: 8%; }
+  main .contact .container .row .item a img {
+    width: 73%; }
   main .about_us .container .img .note {
     width: 80%;
     right: 0; }
@@ -1264,6 +1274,10 @@ footer .join_us {
     footer .ft .container .company .title {
       padding-bottom: 0; }
   footer .ft .container .list ul li {
-    display: inline; } }
+    display: inline; }
+  footer .join_us {
+    padding: 10px 0; }
+    footer .join_us a i {
+      font-size: 18px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -423,6 +423,7 @@ header {
 
 main {
     .about_us {
+        overflow: hidden;
         padding: 8% 0;
         .container {
             display: flex;
@@ -533,13 +534,14 @@ main {
         }
     }
     .service {
+        overflow: hidden;
         padding: 8.4% 0;
         background: url('/img/bg_service.jpg') no-repeat center;
         .container {
             .title {
                 display: none;
                 font-family: "Mulish", sans-serif;
-                font-size: 6vw;
+                font-size: 26px;
                 line-height: 49px;
                 font-weight: 900;
                 color: #303030;
@@ -619,6 +621,7 @@ main {
         }
     }
     .news {
+        overflow: hidden;
         padding: 7vw 0;
         .container {
             .title {
@@ -772,6 +775,7 @@ main {
         }
     }
     .customer {
+        overflow: hidden;
         background: url('/img/partner_bg.png') no-repeat center, linear-gradient(180deg, rgba(255, 255, 255, 0) 15.79%, #FFFFFF 103%);
         background-size: cover;
         padding: 7vw 0;
@@ -895,6 +899,7 @@ main {
         }
     }
     .partner {
+        overflow: hidden;
         padding: 2% 0;
         .content {
             display: flex;
@@ -924,6 +929,7 @@ main {
         }
     }
     .contact {
+        overflow: hidden;
         background: url('/img/bg_service.jpg') center;
         background-color: #265bc5;
         background-blend-mode: soft-light;
@@ -970,9 +976,6 @@ main {
 }
 
 footer {
-    .row {
-        // width: 100%;
-    }
     .ft {
         border-bottom: 1px solid#D7D7D7;
         .container {

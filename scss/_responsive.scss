@@ -368,6 +368,16 @@
                 .title {
                     font-size: 25px;
                 }
+                .row {
+                    .item {
+                        img {
+                            width: 8%;
+                        }
+                        a img {
+                            width: 73%;
+                        }
+                    }
+                }
             }
         }
         .about_us {
@@ -412,6 +422,14 @@
                     ul li {
                         display: inline;
                     }
+                }
+            }
+        }
+        .join_us {
+            padding: 10px 0;
+            a {
+                i {
+                    font-size: 18px;
                 }
             }
         }
