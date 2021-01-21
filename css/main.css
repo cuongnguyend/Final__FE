@@ -1214,6 +1214,8 @@ footer .join_us {
     main .news .container .news_item .item .option {
       border-bottom: 0.5px solid rgba(168, 168, 168, 0.562);
       padding: 2% 0; }
+    main .news .container .news_item .item:hover {
+      box-shadow: none; }
   main .contact .container .title {
     font-size: 35px; }
 
@@ -1243,9 +1245,13 @@ footer .join_us {
   header .banner .content .social {
     display: none; }
   header .banner .scroll_next {
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 28px solid white; }
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white; }
+    header .banner .scroll_next a {
+      bottom: -25px; }
+      header .banner .scroll_next a svg {
+        width: 10px; }
 
   main .service {
     padding-bottom: 13%; }

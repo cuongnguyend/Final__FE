@@ -291,6 +291,9 @@
                             border-bottom: .5px solid rgba(168, 168, 168, 0.562);
                             padding: 2% 0;
                         }
+                        &:hover {
+                            box-shadow: none;
+                        }
                     }
                 }
             }
@@ -362,9 +365,15 @@
                 }
             }
             .scroll_next {
-                border-left: 25px solid transparent;
-                border-right: 25px solid transparent;
-                border-bottom: 28px solid white;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid white;
+                a {
+                    bottom: -25px;
+                    svg {
+                        width: 10px;
+                    }
+                }
             }
         }
     }
