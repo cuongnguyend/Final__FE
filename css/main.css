@@ -1279,7 +1279,7 @@ footer .join_us {
     footer .ft .container .company .title {
       padding-bottom: 0; }
   footer .ft .container .list ul li {
-    display: inline; }
+    display: inline-block; }
   footer .join_us {
     padding: 10px 0; }
     footer .join_us a i {
