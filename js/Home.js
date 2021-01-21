@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() >= 50) {
-            $('#toTopBtn').show("fast");
+            $('#toTopBtn').show("slow");
         } else {
-            $('#toTopBtn').hide("fast");
+            $('#toTopBtn').hide("slow");
         }
     });
     $('#toTopBtn').click(function() {
