@@ -199,7 +199,7 @@ header .nav {
         color: black; }
     header .nav .containner .menu_responsive {
       position: fixed;
-      width: 100%;
+      width: 100% !important;
       height: 100vh;
       z-index: 999;
       top: 0;
@@ -207,35 +207,32 @@ header .nav {
       background: #070D1F;
       transition: ease 0.5s;
       padding: 1.5rem 0; }
-      header .nav .containner .menu_responsive .nav_content {
+      header .nav .containner .menu_responsive .nav_content a {
+        padding: 20px;
+        display: block;
+        width: fit-content;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        transition: .5s; }
+        header .nav .containner .menu_responsive .nav_content a:first-child {
+          margin-top: 20px; }
+        header .nav .containner .menu_responsive .nav_content a:hover {
+          color: #3167d3;
+          padding-left: 30px; }
+      header .nav .containner .menu_responsive .nav_content .closenav {
+        position: absolute;
+        cursor: pointer;
+        text-align: end;
         display: flex;
-        flex-direction: column; }
-        header .nav .containner .menu_responsive .nav_content a {
-          padding: 20px;
-          width: fit-content;
-          color: white;
-          font-weight: 600;
-          text-decoration: none;
-          transition: .5s;
-          overflow-x: visible; }
-          header .nav .containner .menu_responsive .nav_content a:first-child {
-            margin-top: 20px; }
-          header .nav .containner .menu_responsive .nav_content a:hover {
-            color: #3167d3;
-            padding-left: 30px; }
-        header .nav .containner .menu_responsive .nav_content .closenav {
-          position: absolute;
-          cursor: pointer;
-          text-align: end;
-          display: flex;
-          align-self: flex-end;
-          color: white;
-          right: 1.5rem;
-          padding: .25rem;
-          background-color: #282B3A;
-          border-radius: 50%; }
-        header .nav .containner .menu_responsive .nav_content .active {
-          color: #3167d3; }
+        align-self: flex-end;
+        color: white;
+        right: 1.5rem;
+        padding: .25rem;
+        background-color: #282B3A;
+        border-radius: 50%; }
+      header .nav .containner .menu_responsive .nav_content .active {
+        color: #3167d3; }
     header .nav .containner .show {
       left: 0; }
     header .nav .containner .logo {
@@ -1191,8 +1188,7 @@ footer .join_us {
             text-align: center;
             font-size: 2vw; }
       main .customer .container .slide_cus .cus .content {
-        color: black;
-        text-align: center; }
+        color: black; }
         main .customer .container .slide_cus .cus .content div {
           left: 23px;
           top: -5vw; }

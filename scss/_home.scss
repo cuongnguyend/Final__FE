@@ -101,7 +101,7 @@ header {
             }
             .menu_responsive {
                 position: fixed;
-                width: 100%;
+                width: 100% !important;
                 height: 100vh;
                 z-index: 999;
                 top: 0;
@@ -110,16 +110,14 @@ header {
                 transition: ease 0.5s;
                 padding: 1.5rem 0;
                 .nav_content {
-                    display: flex;
-                    flex-direction: column;
                     a {
                         padding: 20px;
+                        display: block;
                         width: fit-content;
                         color: white;
                         font-weight: 600;
                         text-decoration: none;
                         transition: .5s;
-                        overflow-x: visible;
                         &:first-child {
                             margin-top: 20px;
                         }
