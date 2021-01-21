@@ -1154,6 +1154,9 @@ footer .join_us {
   footer .ft .container {
     padding: 5% 0; } }
 @media (max-width: 768px) {
+  header .banner .content .introduce div {
+    padding-bottom: 10px; }
+
   main .about_us .container {
     flex-direction: column; }
     main .about_us .container .img {
@@ -1233,6 +1236,8 @@ footer .join_us {
       font-size: 2.4vw; }
     header .nav .containner .opennav {
       display: flex; }
+  header .banner .content .introduce div {
+    font-size: 4.1vw; }
   header .banner .content .introduce .gr_btn {
     padding-top: 4%; }
   header .banner .content .social {

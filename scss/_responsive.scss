@@ -185,6 +185,17 @@
 }
 
 @media (max-width:768px) {
+    header {
+        .banner {
+            .content {
+                .introduce {
+                    div {
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
     main {
         .about_us {
             .container {
@@ -339,6 +350,9 @@
         .banner {
             .content {
                 .introduce {
+                    div {
+                        font-size: 4.1vw;
+                    }
                     .gr_btn {
                         padding-top: 4%;
                     }
