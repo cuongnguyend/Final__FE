@@ -1180,7 +1180,7 @@ footer .join_us {
   main .customer {
     padding: 10vw 0 12vw; }
     main .customer .container .title {
-      font-size: 35px; }
+      font-size: 30px; }
       main .customer .container .title p {
         padding-bottom: 0; }
     main .customer .container .slide_cus .cus {
@@ -1256,7 +1256,8 @@ footer .join_us {
   main .service {
     padding-bottom: 13%; }
     main .service .container .title {
-      display: block; }
+      display: block;
+      font-size: 30px; }
   main .contact .container .title {
     font-size: 25px; }
   main .contact .container .row .item img {
@@ -1267,14 +1268,15 @@ footer .join_us {
     width: 80%;
     right: 0; }
   main .about_us .container .content div .title {
-    font-size: 35px; }
+    font-size: 30px;
+    text-transform: uppercase; }
   main .about_us .container .content div p {
     text-align: left; }
   main .about_us .container .content div .auth {
     padding-bottom: 0;
     text-align: center; }
   main .news .container .title {
-    font-size: 35px; }
+    font-size: 30px; }
     main .news .container .title p {
       padding-bottom: 0; }
 
