@@ -178,12 +178,12 @@ header .contact_res {
 header .nav {
   background: #F8F8F8;
   width: 100%; }
-  header .nav .containner {
+  header .nav .nav_list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%; }
-    header .nav .containner .opennav {
+    header .nav .nav_list .opennav {
       display: none;
       position: absolute;
       left: 2vw;
@@ -193,11 +193,11 @@ header .nav {
       align-items: center;
       justify-content: center;
       text-align: center; }
-      header .nav .containner .opennav i {
+      header .nav .nav_list .opennav i {
         font-size: 4.5vw;
         position: relative;
         color: black; }
-    header .nav .containner .menu_responsive {
+    header .nav .nav_list .menu_responsive {
       position: fixed;
       width: 100% !important;
       height: 100vh;
@@ -207,7 +207,7 @@ header .nav {
       background: #070D1F;
       transition: ease 0.5s;
       padding: 1.5rem 0; }
-      header .nav .containner .menu_responsive .nav_content a {
+      header .nav .nav_list .menu_responsive .nav_content a {
         padding: 20px;
         display: block;
         width: fit-content;
@@ -215,12 +215,12 @@ header .nav {
         font-weight: 600;
         text-decoration: none;
         transition: .5s; }
-        header .nav .containner .menu_responsive .nav_content a:first-child {
+        header .nav .nav_list .menu_responsive .nav_content a:first-child {
           margin-top: 20px; }
-        header .nav .containner .menu_responsive .nav_content a:hover {
+        header .nav .nav_list .menu_responsive .nav_content a:hover {
           color: #3167d3;
           padding-left: 30px; }
-      header .nav .containner .menu_responsive .nav_content .closenav {
+      header .nav .nav_list .menu_responsive .nav_content .closenav {
         position: absolute;
         cursor: pointer;
         text-align: end;
@@ -231,11 +231,11 @@ header .nav {
         padding: .25rem;
         background-color: #282B3A;
         border-radius: 50%; }
-      header .nav .containner .menu_responsive .nav_content .active {
+      header .nav .nav_list .menu_responsive .nav_content .active {
         color: #3167d3; }
-    header .nav .containner .show {
+    header .nav .nav_list .show {
       left: 0; }
-    header .nav .containner .logo {
+    header .nav .nav_list .logo {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -243,11 +243,11 @@ header .nav {
       left: 11.5%;
       position: absolute;
       text-align: center; }
-      header .nav .containner .logo img {
+      header .nav .nav_list .logo img {
         width: 9.036vw;
         padding-top: 40px;
         padding-bottom: 4px; }
-      header .nav .containner .logo p {
+      header .nav .nav_list .logo p {
         font-weight: 700;
         padding-bottom: 8px;
         font-style: normal;
@@ -255,7 +255,7 @@ header .nav {
         line-height: 17.7px;
         letter-spacing: 0.05em;
         color: #2C4985; }
-    header .nav .containner .clippath {
+    header .nav .nav_list .clippath {
       width: 33.5vw;
       height: 3.11vw;
       position: absolute;
@@ -264,29 +264,29 @@ header .nav {
       left: 0;
       background: #F8F8F8;
       clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); }
-    header .nav .containner .contact {
+    header .nav .nav_list .contact {
       display: flex;
       flex-direction: row;
       padding: 21px 0 19px 0; }
-      header .nav .containner .contact .item {
+      header .nav .nav_list .contact .item {
         display: flex;
         align-items: center;
         padding-left: 76px; }
-        header .nav .containner .contact .item img {
+        header .nav .nav_list .contact .item img {
           width: 20px;
           height: 20px;
           margin-right: 16px;
           transition: .5s; }
-          header .nav .containner .contact .item img:hover {
+          header .nav .nav_list .contact .item img:hover {
             filter: none; }
-        header .nav .containner .contact .item .info p {
+        header .nav .nav_list .contact .item .info p {
           font-family: Montserrat;
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
           line-height: 17px;
           color: #1A3761; }
-        header .nav .containner .contact .item .info a {
+        header .nav .nav_list .contact .item .info a {
           font-family: Montserrat;
           font-style: normal;
           font-weight: bold;
@@ -294,14 +294,14 @@ header .nav {
           line-height: 17px;
           color: #EE1F23;
           text-decoration: none; }
-      header .nav .containner .contact .hotline {
+      header .nav .nav_list .contact .hotline {
         padding-left: 0; }
-    header .nav .containner .menu_res {
+    header .nav .nav_list .menu_res {
       display: none; }
-      header .nav .containner .menu_res .container {
+      header .nav .nav_list .menu_res .container {
         display: flex;
         justify-content: center; }
-        header .nav .containner .menu_res .container a {
+        header .nav .nav_list .menu_res .container a {
           font-family: "Mulish", sans-serif;
           position: relative;
           font-size: 1.6vw;
@@ -313,7 +313,7 @@ header .nav {
           padding-bottom: 10px;
           text-decoration: none;
           transition: .5s; }
-          header .nav .containner .menu_res .container a::after {
+          header .nav .nav_list .menu_res .container a::after {
             content: '';
             position: absolute;
             width: 100%;
@@ -328,9 +328,9 @@ header .nav {
             -o-transition: .3s;
             transition: .3s;
             transform: scale(0); }
-          header .nav .containner .menu_res .container a:hover {
+          header .nav .nav_list .menu_res .container a:hover {
             color: #EE1F23; }
-          header .nav .containner .menu_res .container a.active::after, header .nav .containner .menu_res .container a:hover::after {
+          header .nav .nav_list .menu_res .container a.active::after, header .nav .nav_list .menu_res .container a:hover::after {
             transform: scale(1);
             background: #EE1F23; }
 header .banner {
@@ -1056,9 +1056,9 @@ footer .join_us {
 
 /* back to top  */
 @media (max-width: 1200px) {
-  header .nav .containner .logo {
+  header .nav .nav_list .logo {
     left: 8%; }
-    header .nav .containner .logo p {
+    header .nav .nav_list .logo p {
       font-size: 1.1vw; }
 
   main .customer .container .slide_cus .cus {

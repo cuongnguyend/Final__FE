@@ -34,14 +34,24 @@ $(document).ready(function() {
 
     });
     // scrol next 
+    $(window).bind("resize", function() {
+        console.log($(this).width())
+        if ($(this).width() < 992) {
+            $('.nav_list').removeClass('container');
+            $('.nav_list').addClass('containner');
+        } else {
+            $('.nav_list').removeClass('containner');
+            $('.nav_list').addClass('container');
 
-    $(window).resize(function() {
-            var width = $(window).width();
-            if (width < 992) {
-                $('.containner').removeClass('container');
-            }
-        })
-        .resize();
+        }
+    }).trigger('resize');
+    // $(window).resize(function() {
+    //         var width = $(window).width();
+    //         if (width < 992) {
+    //             $('.containner').removeClass('container');
+    //         }
+    //     })
+    //     .resize();
 
     const navMenu = $('#menu_responsive'),
         toggleMenu = $('#opennav'),
