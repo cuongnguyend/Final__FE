@@ -897,108 +897,110 @@ main .contact {
           transition: .5s;
           padding-top: 20px; }
 
-footer .ft {
-  border-bottom: 1px solid #D7D7D7; }
-  footer .ft .container {
-    padding: 3% 0; }
-    footer .ft .container .company {
-      display: flex;
-      flex-direction: column; }
-      footer .ft .container .company img {
-        width: fit-content;
-        object-fit: contain;
-        padding-bottom: 30px; }
-      footer .ft .container .company .name {
-        font-style: normal;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 22px;
-        color: #303030;
-        padding-bottom: 10px; }
-      footer .ft .container .company .des {
+footer {
+  overflow: hidden; }
+  footer .ft {
+    border-bottom: 1px solid #D7D7D7; }
+    footer .ft .container {
+      padding: 3% 0; }
+      footer .ft .container .company {
+        display: flex;
+        flex-direction: column; }
+        footer .ft .container .company img {
+          width: fit-content;
+          object-fit: contain;
+          padding-bottom: 30px; }
+        footer .ft .container .company .name {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 16px;
+          line-height: 22px;
+          color: #303030;
+          padding-bottom: 10px; }
+        footer .ft .container .company .des {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 26px;
+          color: #505050; }
+      footer .ft .container .list ul li {
+        padding: 8px 0; }
+        footer .ft .container .list ul li::before {
+          content: "\2022";
+          color: red;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em; }
+        footer .ft .container .list ul li a {
+          text-decoration: none;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 19px;
+          color: #505050;
+          transition: .5s; }
+          footer .ft .container .list ul li a:hover {
+            color: #EE1F23;
+            margin-left: 10px; }
+      footer .ft .container .contact p {
+        padding-top: 8px;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
-        line-height: 26px;
+        line-height: 20px;
         color: #505050; }
-    footer .ft .container .list ul li {
-      padding: 8px 0; }
-      footer .ft .container .list ul li::before {
-        content: "\2022";
-        color: red;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em; }
-      footer .ft .container .list ul li a {
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 19px;
-        color: #505050;
-        transition: .5s; }
-        footer .ft .container .list ul li a:hover {
-          color: #EE1F23;
-          margin-left: 10px; }
-    footer .ft .container .contact p {
-      padding-top: 8px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 20px;
-      color: #505050; }
-    footer .ft .container .contact form {
-      padding: 20px 0;
-      display: flex;
-      flex-direction: row; }
-      footer .ft .container .contact form input {
-        position: relative;
-        width: 85%;
-        padding: 8px 5px;
-        background: #ECEFF4;
-        border: 1px solid #CAD3DF; }
-        footer .ft .container .contact form input:focus {
-          outline: none; }
-        footer .ft .container .contact form input::placeholder {
+      footer .ft .container .contact form {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row; }
+        footer .ft .container .contact form input {
+          position: relative;
+          width: 85%;
+          padding: 8px 5px;
+          background: #ECEFF4;
+          border: 1px solid #CAD3DF; }
+          footer .ft .container .contact form input:focus {
+            outline: none; }
+          footer .ft .container .contact form input::placeholder {
+            font-size: 15px;
+            line-height: 20px;
+            color: #8493A8; }
+        footer .ft .container .contact form button {
+          cursor: pointer;
+          padding: 0 15px;
+          border: none;
+          color: white;
           font-size: 15px;
-          line-height: 20px;
-          color: #8493A8; }
-      footer .ft .container .contact form button {
-        cursor: pointer;
-        padding: 0 15px;
-        border: none;
-        color: white;
-        font-size: 15px;
-        font-weight: 700;
-        border-radius: 1px;
-        background: #EE1F23; }
-        footer .ft .container .contact form button:focus {
-          outline: none; }
-    footer .ft .container .list,
-    footer .ft .container .contact {
-      padding-top: 4%; }
-      footer .ft .container .list .title,
-      footer .ft .container .contact .title {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 27px;
+          font-weight: 700;
+          border-radius: 1px;
+          background: #EE1F23; }
+          footer .ft .container .contact form button:focus {
+            outline: none; }
+      footer .ft .container .list,
+      footer .ft .container .contact {
+        padding-top: 4%; }
+        footer .ft .container .list .title,
+        footer .ft .container .contact .title {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 27px;
+          color: #265BC5;
+          padding-bottom: 20px; }
+  footer .join_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0; }
+    footer .join_us a {
+      padding: 0 30px; }
+      footer .join_us a i {
+        font-size: 24px;
         color: #265BC5;
-        padding-bottom: 20px; }
-footer .join_us {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0; }
-  footer .join_us a {
-    padding: 0 30px; }
-    footer .join_us a i {
-      font-size: 24px;
-      color: #265BC5;
-      transition: .5s; }
-    footer .join_us a:hover i {
-      color: #EE1F23; }
+        transition: .5s; }
+      footer .join_us a:hover i {
+        color: #EE1F23; }
 
 /* back to top  */
 #toTopBtn {
