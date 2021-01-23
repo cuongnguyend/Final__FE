@@ -1175,11 +1175,26 @@ footer {
       display: flex; }
     header .nav .nav_list .contact_res {
       display: none; }
-  header .banner .content .introduce div {
-    padding-bottom: 10px;
-    text-align: left; }
-  header .banner .content .introduce .gr_btn {
-    width: fit-content; }
+  header .banner .content {
+    padding-bottom: 8%; }
+    header .banner .content .introduce div {
+      padding-bottom: 10px;
+      text-align: left; }
+    header .banner .content .introduce .gr_btn {
+      width: fit-content;
+      padding-top: 3%; }
+      header .banner .content .introduce .gr_btn button {
+        padding: 7px 20px; }
+      header .banner .content .introduce .gr_btn a {
+        width: 25px; }
+  header .banner .scroll_next {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white; }
+    header .banner .scroll_next a {
+      bottom: -25px; }
+      header .banner .scroll_next a svg {
+        width: 10px; }
 
   main .about_us .container {
     flex-direction: column; }
@@ -1250,19 +1265,12 @@ footer {
     padding: 20px 0; } }
 @media (max-width: 576px) {
   header .banner .content .introduce div {
-    font-size: 4.1vw; }
+    font-size: 20px;
+    line-height: normal; }
   header .banner .content .introduce .gr_btn {
     padding-top: 4%; }
   header .banner .content .social {
     display: none; }
-  header .banner .scroll_next {
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid white; }
-    header .banner .scroll_next a {
-      bottom: -25px; }
-      header .banner .scroll_next a svg {
-        width: 10px; }
 
   main .service {
     padding-bottom: 13%; }

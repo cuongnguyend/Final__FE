@@ -217,6 +217,7 @@
         }
         .banner {
             .content {
+                padding-bottom: 8%;
                 .introduce {
                     div {
                         padding-bottom: 10px;
@@ -224,6 +225,24 @@
                     }
                     .gr_btn {
                         width: fit-content;
+                        padding-top: 3%;
+                        button {
+                            padding: 7px 20px;
+                        }
+                        a {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+            .scroll_next {
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid white;
+                a {
+                    bottom: -25px;
+                    svg {
+                        width: 10px;
                     }
                 }
             }
@@ -267,7 +286,6 @@
             }
         }
         .customer {
-            // background: geya;
             padding: 10vw 0 12vw;
             .container {
                 .title {
@@ -364,7 +382,8 @@
             .content {
                 .introduce {
                     div {
-                        font-size: 4.1vw;
+                        font-size: 20px;
+                        line-height: normal;
                     }
                     .gr_btn {
                         padding-top: 4%;
@@ -372,17 +391,6 @@
                 }
                 .social {
                     display: none;
-                }
-            }
-            .scroll_next {
-                border-left: 15px solid transparent;
-                border-right: 15px solid transparent;
-                border-bottom: 15px solid white;
-                a {
-                    bottom: -25px;
-                    svg {
-                        width: 10px;
-                    }
                 }
             }
         }
