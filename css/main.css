@@ -147,6 +147,34 @@ body {
 body {
   font-family: 'Open Sans', sans-serif; }
 
+header .contact_res {
+  display: none;
+  width: 99%;
+  position: absolute;
+  flex-direction: row;
+  justify-content: flex-end; }
+  header .contact_res .item {
+    display: flex;
+    align-items: center;
+    padding-left: 20px; }
+    header .contact_res .item img {
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+      transition: .5s; }
+      header .contact_res .item img:hover {
+        filter: none; }
+    header .contact_res .item .info {
+      height: 30px; }
+      header .contact_res .item .info a {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 1.1vw;
+        color: #EE1F23;
+        line-height: normal;
+        text-decoration: none; }
+  header .contact_res .hotline {
+    padding-left: 0; }
 header .nav {
   background: #F8F8F8;
   width: 100%; }
@@ -180,58 +208,69 @@ header .nav {
       left: -100%;
       background: #070D1F;
       transition: ease 0.5s;
-      padding: 1.5rem 0; }
-      header .nav .nav_list .menu_responsive .nav_content .item {
-        padding: 15px 20px;
-        display: block;
-        width: fit-content;
-        color: white;
-        font-weight: 600;
-        text-decoration: none;
-        transition: .5s; }
-        header .nav .nav_list .menu_responsive .nav_content .item:first-child {
-          margin-top: 20px; }
-        header .nav .nav_list .menu_responsive .nav_content .item:hover {
-          color: #3167d3;
-          padding-left: 30px; }
-      header .nav .nav_list .menu_responsive .nav_content .closenav {
-        position: absolute;
-        cursor: pointer;
-        text-align: end;
-        display: flex;
-        align-self: flex-end;
-        color: white;
-        right: 1.5rem;
-        padding: .25rem;
-        background-color: #282B3A;
-        border-radius: 50%; }
-      header .nav .nav_list .menu_responsive .nav_content .active {
-        color: #3167d3; }
-      header .nav .nav_list .menu_responsive .nav_content .company_icon {
-        background: #e7e7e7;
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100%;
-        width: 60px;
-        height: 60px; }
-        header .nav .nav_list .menu_responsive .nav_content .company_icon img {
-          width: 90%; }
-      header .nav .nav_list .menu_responsive .nav_content p {
-        margin: 10px 0 50px 20px;
-        color: white; }
-      header .nav .nav_list .menu_responsive .nav_content .icon {
-        display: flex;
-        margin-top: 40px; }
-        header .nav .nav_list .menu_responsive .nav_content .icon a {
-          margin: 0 !important;
-          padding: 20px;
-          transition: .5s; }
-          header .nav .nav_list .menu_responsive .nav_content .icon a img {
-            filter: grayscale(100%) brightness(110%) contrast(5) invert(100%); }
-          header .nav .nav_list .menu_responsive .nav_content .icon a:hover img {
-            filter: none; }
+      padding: 1.5rem 0;
+      overflow: scroll; }
+      header .nav .nav_list .menu_responsive .nav_content {
+        padding: 20px; }
+        header .nav .nav_list .menu_responsive .nav_content .menu {
+          padding-bottom: 10px; }
+          header .nav .nav_list .menu_responsive .nav_content .menu .item {
+            padding-top: 20px;
+            display: block;
+            width: fit-content;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            transition: .5s; }
+            header .nav .nav_list .menu_responsive .nav_content .menu .item:first-child {
+              margin-top: 20px; }
+            header .nav .nav_list .menu_responsive .nav_content .menu .item:hover {
+              color: #3167d3;
+              padding-left: 15px; }
+        header .nav .nav_list .menu_responsive .nav_content .closenav {
+          position: absolute;
+          cursor: pointer;
+          text-align: end;
+          display: flex;
+          align-self: flex-end;
+          color: white;
+          right: 1.5rem;
+          padding: .25rem;
+          background-color: #282B3A;
+          border-radius: 50%; }
+        header .nav .nav_list .menu_responsive .nav_content .active {
+          color: #3167d3; }
+        header .nav .nav_list .menu_responsive .nav_content .company_icon {
+          background: #e7e7e7;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 100%;
+          width: 50px;
+          height: 50px; }
+          header .nav .nav_list .menu_responsive .nav_content .company_icon img {
+            width: 90%; }
+        header .nav .nav_list .menu_responsive .nav_content p {
+          margin-bottom: 30px;
+          padding: 10px 0;
+          font-weight: 600;
+          color: white;
+          border-bottom: 1px solid rgba(190, 190, 190, 0.25); }
+        header .nav .nav_list .menu_responsive .nav_content .icon {
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+          border-top: 1px solid rgba(190, 190, 190, 0.25); }
+          header .nav .nav_list .menu_responsive .nav_content .icon a {
+            margin: 0 !important;
+            padding: 20px;
+            transition: .5s; }
+            header .nav .nav_list .menu_responsive .nav_content .icon a:first-child {
+              padding-left: 0; }
+            header .nav .nav_list .menu_responsive .nav_content .icon a img {
+              filter: grayscale(100%) brightness(110%) contrast(5) invert(100%); }
+            header .nav .nav_list .menu_responsive .nav_content .icon a:hover img {
+              filter: none; }
     header .nav .nav_list .show {
       left: 0; }
     header .nav .nav_list .logo {
@@ -299,7 +338,8 @@ header .nav {
       display: none; }
       header .nav .nav_list .menu_res .container {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        margin-top: 20px; }
         header .nav .nav_list .menu_res .container a {
           font-family: "Mulish", sans-serif;
           position: relative;
@@ -332,12 +372,6 @@ header .nav {
           header .nav .nav_list .menu_res .container a.active::after, header .nav .nav_list .menu_res .container a:hover::after {
             transform: scale(1);
             background: #EE1F23; }
-    header .nav .nav_list .contact_res {
-      display: none; }
-      header .nav .nav_list .contact_res a {
-        padding: 0 7px; }
-        header .nav .nav_list .contact_res a img {
-          width: 80%; }
 header .banner {
   background: linear-gradient(96.72deg, rgba(0, 47, 115, 0.6) 36.03%, rgba(31, 30, 39, 0) 108.98%), url("/img/banner_bg.jpg") no-repeat;
   background-size: cover;
@@ -448,7 +482,7 @@ header .banner {
   header .banner .scroll_next {
     position: absolute;
     cursor: pointer;
-    bottom: 0;
+    bottom: -1px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 0;
@@ -1076,6 +1110,8 @@ footer {
       padding-bottom: 3%;
       width: auto; } }
 @media (max-width: 992px) {
+  header .contact_res {
+    display: flex; }
   header .nav .nav_list {
     width: 95%;
     padding: 1% 0;
@@ -1096,7 +1132,7 @@ footer {
     header .nav .nav_list .menu_res {
       display: block; }
       header .nav .nav_list .menu_res .container a {
-        margin: 0 13px; }
+        margin: 0 20px; }
         header .nav .nav_list .menu_res .container a:first-child {
           margin-left: 0; }
         header .nav .nav_list .menu_res .container a:last-child {
@@ -1154,7 +1190,7 @@ footer {
     main .contact .container .row .item a {
       padding-top: 5px; }
   main .news .container .news_item .item .content {
-    padding: 2% 1% 5%;
+    padding: 2% 4% 5%;
     border-bottom: none; }
   main .news .container .news_item .item .option {
     border-bottom: 0.5px solid rgba(168, 168, 168, 0.562);
@@ -1163,6 +1199,8 @@ footer {
   footer .ft .container {
     padding: 5% 0; } }
 @media (max-width: 768px) {
+  header .contact_res {
+    display: none; }
   header .nav .nav_list {
     justify-content: flex-start; }
     header .nav .nav_list .menu_res {
@@ -1207,16 +1245,19 @@ footer {
     main .about_us .container .content {
       width: 100%;
       padding: 0;
-      padding-top: 10%;
-      text-align: center; }
+      padding-top: 10%; }
       main .about_us .container .content div .title {
-        padding-bottom: 15px; }
+        padding-bottom: 15px;
+        text-align: center; }
+      main .about_us .container .content div .auth {
+        text-align: center; }
   main .service {
     background-size: cover;
     background-position: center; }
     main .service .containner .row .col-md-5 {
       margin-bottom: 2%; }
   main .customer {
+    background: linear-gradient(360deg, rgba(192, 192, 192, 0.582) 15.79%, #f8f8f8 103%);
     padding: 10vw 0 12vw; }
     main .customer .container .title {
       font-size: 30px; }
@@ -1246,6 +1287,10 @@ footer {
       transform: translate(-50%, -50%); }
   main .news {
     padding: 10vw 0; }
+    main .news .container .title {
+      font-size: 30px; }
+      main .news .container .title p {
+        padding-bottom: 0; }
     main .news .container .news_item .item .content {
       padding: 2% 0 5%;
       border-bottom: none; }
@@ -1277,12 +1322,14 @@ footer {
     main .service .container .title {
       display: block;
       font-size: 30px; }
-  main .contact .container .title {
-    font-size: 25px; }
-  main .contact .container .row .item img {
-    width: 8%; }
-  main .contact .container .row .item a img {
-    width: 73%; }
+  main .contact {
+    padding: 7% 0; }
+    main .contact .container .title {
+      font-size: 25px; }
+    main .contact .container .row .item img {
+      width: 10%; }
+    main .contact .container .row .item a img {
+      width: 73%; }
   main .about_us .container .img .note {
     width: 80%;
     right: 0; }
@@ -1294,10 +1341,8 @@ footer {
   main .about_us .container .content div .auth {
     padding-bottom: 0;
     text-align: center; }
-  main .news .container .title {
-    font-size: 30px; }
-    main .news .container .title p {
-      padding-bottom: 0; }
+  main .about_us .container .content div .gr_btn {
+    padding: 10px 27px; }
   main .customer .container .slide_cus .cus .img .note {
     display: none; }
   main .partner {

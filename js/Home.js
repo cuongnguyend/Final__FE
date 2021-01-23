@@ -54,9 +54,12 @@ $(document).ready(function() {
 
     toggleMenu.click(function() {
         navMenu.toggleClass("show");
+        $('body').css("overflow", "hidden");
     });
     closeMenu.click(function() {
         navMenu.removeClass("show");
+        $('body').css("overflow", "scroll");
+
     });
 
 

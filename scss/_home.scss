@@ -7,6 +7,41 @@ sans-serif;
 $font_muli: 'Mulish',
 sans-serif;
 header {
+    .contact_res {
+        display: none;
+        width: 99%;
+        position: absolute;
+        flex-direction: row;
+        justify-content: flex-end;
+        .item {
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            img {
+                width: 12px;
+                height: 12px;
+                margin-right: 10px;
+                transition: .5s;
+                &:hover {
+                    filter: none;
+                }
+            }
+            .info {
+                height: 30px;
+                a {
+                    font-family: Montserrat;
+                    font-weight: bold;
+                    font-size: 1.1vw;
+                    color: #EE1F23;
+                    line-height: normal;
+                    text-decoration: none;
+                }
+            }
+        }
+        .hotline {
+            padding-left: 0;
+        }
+    }
     .nav {
         background: #F8F8F8;
         width: 100%;
@@ -39,21 +74,26 @@ header {
                 background: #070D1F;
                 transition: ease 0.5s;
                 padding: 1.5rem 0;
+                overflow: scroll;
                 .nav_content {
-                    .item {
-                        padding: 15px 20px;
-                        display: block;
-                        width: fit-content;
-                        color: white;
-                        font-weight: 600;
-                        text-decoration: none;
-                        transition: .5s;
-                        &:first-child {
-                            margin-top: 20px;
-                        }
-                        &:hover {
-                            color: #3167d3;
-                            padding-left: 30px;
+                    padding: 20px;
+                    .menu {
+                        padding-bottom: 10px;
+                        .item {
+                            padding-top: 20px;
+                            display: block;
+                            width: fit-content;
+                            color: white;
+                            font-weight: 500;
+                            text-decoration: none;
+                            transition: .5s;
+                            &:first-child {
+                                margin-top: 20px;
+                            }
+                            &:hover {
+                                color: #3167d3;
+                                padding-left: 15px;
+                            }
                         }
                     }
                     .closenav {
@@ -73,28 +113,35 @@ header {
                     }
                     .company_icon {
                         background: #e7e7e7;
-                        margin-left: 20px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         border-radius: 100%;
-                        width: 60px;
-                        height: 60px;
+                        width: 50px;
+                        height: 50px;
                         img {
                             width: 90%;
                         }
                     }
                     p {
-                        margin: 10px 0 50px 20px;
+                        margin-bottom: 30px;
+                        padding: 10px 0;
+                        font-weight: 600;
                         color: white;
+                        border-bottom: 1px solid rgba(190, 190, 190, 0.25);
                     }
                     .icon {
                         display: flex;
+                        justify-content: center;
                         margin-top: 40px;
+                        border-top: 1px solid rgba(190, 190, 190, 0.25);
                         a {
                             margin: 0 !important;
                             padding: 20px;
                             transition: .5s;
+                            &:first-child {
+                                padding-left: 0;
+                            }
                             img {
                                 filter: grayscale(100%) brightness(110%) contrast(5) invert(100%);
                             }
@@ -191,6 +238,7 @@ header {
                 .container {
                     display: flex;
                     justify-content: center;
+                    margin-top: 20px;
                     a {
                         font-family: $font_muli;
                         position: relative;
@@ -227,15 +275,6 @@ header {
                             transform: scale(1);
                             background: #EE1F23;
                         }
-                    }
-                }
-            }
-            .contact_res {
-                display: none;
-                a {
-                    padding: 0 7px;
-                    img {
-                        width: 80%;
                     }
                 }
             }
@@ -374,7 +413,7 @@ header {
         .scroll_next {
             position: absolute;
             cursor: pointer;
-            bottom: 0;
+            bottom: -1px;
             left: 50%;
             transform: translate(-50%, 0);
             width: 0;
