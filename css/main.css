@@ -611,52 +611,55 @@ main .service {
     color: #303030;
     padding: 5% 0 3%;
     text-align: center; }
-  main .service .container .row .item {
-    cursor: pointer;
-    background: #F8F8F8;
-    padding: 48px 57px 46px 52px;
-    border-bottom: 1px solid #265BC5;
-    transition: .5s; }
-    main .service .container .row .item .icon {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 7px; }
-    main .service .container .row .item .content div {
-      font-family: "Mulish", sans-serif;
-      font-size: 18px;
-      line-height: 21px;
-      color: #265BC5;
-      padding-bottom: 2.5%;
-      font-weight: 900; }
-    main .service .container .row .item .content p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
-      color: #303030; }
-    main .service .container .row .item:hover {
-      transition: .5s;
+  main .service .container .row {
+    margin-left: 0;
+    margin-right: 0; }
+    main .service .container .row .item {
+      cursor: pointer;
+      background: #F8F8F8;
+      padding: 48px 57px 46px 52px;
+      border-bottom: 1px solid #265BC5;
+      transition: .5s; }
+      main .service .container .row .item .icon {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 7px; }
+      main .service .container .row .item .content div {
+        font-family: "Mulish", sans-serif;
+        font-size: 18px;
+        line-height: 21px;
+        color: #265BC5;
+        padding-bottom: 2.5%;
+        font-weight: 900; }
+      main .service .container .row .item .content p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #303030; }
+      main .service .container .row .item:hover {
+        transition: .5s;
+        background: #265BC5; }
+        main .service .container .row .item:hover .icon img:first-child {
+          transition: .5s;
+          filter: grayscale(100%) brightness(110%) contrast(3) invert(100%); }
+        main .service .container .row .item:hover .icon img:last-child {
+          transition: .5s;
+          filter: opacity(0.19) grayscale(100%); }
+        main .service .container .row .item:hover .content div {
+          color: #F8F8F8; }
+        main .service .container .row .item:hover .content p {
+          color: #E0E0E0; }
+    main .service .container .row:nth-child(2) .col-5 {
+      padding-bottom: 30px; }
+    main .service .container .row .service2 {
       background: #265BC5; }
-      main .service .container .row .item:hover .icon img:first-child {
-        transition: .5s;
-        filter: grayscale(100%) brightness(110%) contrast(3) invert(100%); }
-      main .service .container .row .item:hover .icon img:last-child {
-        transition: .5s;
-        filter: opacity(0.19) grayscale(100%); }
-      main .service .container .row .item:hover .content div {
+      main .service .container .row .service2 .content div {
         color: #F8F8F8; }
-      main .service .container .row .item:hover .content p {
+      main .service .container .row .service2 .content p {
         color: #E0E0E0; }
-  main .service .container .row:nth-child(2) .col-5 {
-    padding-bottom: 30px; }
-  main .service .container .row .service2 {
-    background: #265BC5; }
-    main .service .container .row .service2 .content div {
-      color: #F8F8F8; }
-    main .service .container .row .service2 .content p {
-      color: #E0E0E0; }
-    main .service .container .row .service2:hover .icon img {
-      filter: none !important; }
+      main .service .container .row .service2:hover .icon img {
+        filter: none !important; }
 main .news {
   overflow: hidden;
   padding: 7vw 0; }

@@ -35,7 +35,6 @@ $(document).ready(function() {
     });
     // scrol next 
     $(window).bind("resize", function() {
-        console.log($(this).width())
         if ($(this).width() < 992) {
             $('.nav_list').removeClass('container');
             $('.nav_list').addClass('containner');
@@ -44,7 +43,14 @@ $(document).ready(function() {
             $('.nav_list').addClass('container');
 
         }
+        // if ($(this).width() > 768) {
+        //     $(".menu_responsive").css("display", "none");
+        //     $(".opennav").css("display", "none");
+        // } else
+        //     $(".opennav").css("display", "block");
+
     }).trigger('resize');
+
 
     $("a.service, a.contact").click(function(event) {
         event.preventDefault();
