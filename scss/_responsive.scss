@@ -400,6 +400,9 @@
                     div {
                         font-size: 25px;
                         line-height: normal;
+                        .underline {
+                            background-image: linear-gradient(transparent calc(100% - 2px), rgb(238, 238, 238) 10px);
+                        }
                     }
                     .gr_btn {
                         padding-top: 4%;
