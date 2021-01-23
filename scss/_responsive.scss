@@ -398,7 +398,7 @@
             .content {
                 .introduce {
                     div {
-                        font-size: 20px;
+                        font-size: 25px;
                         line-height: normal;
                     }
                     .gr_btn {
@@ -407,6 +407,20 @@
                 }
                 .social {
                     display: none;
+                }
+            }
+        }
+        .nav {
+            .nav_list {
+                .opennav {
+                    i {
+                        font-size: 5vw;
+                    }
+                }
+                .logo {
+                    img {
+                        width: 80%;
+                    }
                 }
             }
         }

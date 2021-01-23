@@ -46,6 +46,10 @@ $(document).ready(function() {
         }
     }).trigger('resize');
 
+    $("a.service, a.contact").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
 
     const navMenu = $('#menu_responsive'),
         toggleMenu = $('#opennav'),
@@ -54,7 +58,7 @@ $(document).ready(function() {
 
     toggleMenu.click(function() {
         navMenu.toggleClass("show");
-        $('body').css("overflow", "hidden");
+        $('body').css("overflow-x", "hidden");
     });
     closeMenu.click(function() {
         navMenu.removeClass("show");
@@ -62,8 +66,4 @@ $(document).ready(function() {
 
     });
 
-    $("a.service, a.contact").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
-    });
 });

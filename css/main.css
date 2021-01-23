@@ -1311,12 +1311,16 @@ footer {
     padding: 20px 0; } }
 @media (max-width: 576px) {
   header .banner .content .introduce div {
-    font-size: 20px;
+    font-size: 25px;
     line-height: normal; }
   header .banner .content .introduce .gr_btn {
     padding-top: 4%; }
   header .banner .content .social {
     display: none; }
+  header .nav .nav_list .opennav i {
+    font-size: 5vw; }
+  header .nav .nav_list .logo img {
+    width: 80%; }
 
   main .service {
     padding-bottom: 13%; }
