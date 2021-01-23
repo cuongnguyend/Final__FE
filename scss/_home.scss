@@ -7,41 +7,6 @@ sans-serif;
 $font_muli: 'Mulish',
 sans-serif;
 header {
-    .contact_res {
-        display: none;
-        position: absolute;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding: 5px 0;
-        .item {
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-            img {
-                width: 12px;
-                height: 12px;
-                margin-right: 10px;
-                transition: .5s;
-                &:hover {
-                    filter: none;
-                }
-            }
-            .info {
-                height: 30px;
-                a {
-                    font-family: Montserrat;
-                    font-weight: bold;
-                    font-size: 1.1vw;
-                    color: #EE1F23;
-                    line-height: normal;
-                    text-decoration: none;
-                }
-            }
-        }
-        .hotline {
-            padding-left: 0;
-        }
-    }
     .nav {
         background: #F8F8F8;
         width: 100%;
@@ -49,55 +14,20 @@ header {
             .opennav {
                 display: none;
                 position: absolute;
-                left: 2vw;
+                right: 2vw;
                 width: 50px;
                 height: 50px;
                 cursor: pointer;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                border-radius: 100%;
                 i {
-                    font-size: 4.5vw;
+                    font-size: 4vw;
                     position: relative;
                     color: black;
                 }
-                // &::before {
-                //     content: "";
-                //     position: absolute;
-                //     text-align: center;
-                //     width: 3vw;
-                //     background: black;
-                //     height: 3px;
-                //     transform: rotate(0);
-                //     left: 50%;
-                //     top: 50%;
-                //     transform: translate(-50%, -50%);
-                //     transition: .5s;
-                // }
-                // &::after {
-                //     content: "";
-                //     width: 3vw;
-                //     height: 3px;
-                //     text-align: center;
-                //     background: black;
-                //     position: absolute;
-                //     transform: rotate(0);
-                //     left: 50%;
-                //     top: 50%;
-                //     transition: .5s;
-                //     transform: translate(-50%, -50%);
-                // }
-                // &:hover {
-                //     i {
-                //         display: none;
-                //     }
-                //     &::before {
-                //         transform: rotate(45deg);
-                //     }
-                //     &::after {
-                //         transform: rotate(-45deg);
-                //     }
-                // }
+                transition: .5s;
             }
             .menu_responsive {
                 position: fixed;
@@ -110,8 +40,8 @@ header {
                 transition: ease 0.5s;
                 padding: 1.5rem 0;
                 .nav_content {
-                    a {
-                        padding: 20px;
+                    .item {
+                        padding: 15px 20px;
                         display: block;
                         width: fit-content;
                         color: white;
@@ -140,6 +70,38 @@ header {
                     }
                     .active {
                         color: #3167d3;
+                    }
+                    .company_icon {
+                        background: #e7e7e7;
+                        margin-left: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100%;
+                        width: 60px;
+                        height: 60px;
+                        img {
+                            width: 90%;
+                        }
+                    }
+                    p {
+                        margin: 10px 0 50px 20px;
+                        color: white;
+                    }
+                    .icon {
+                        display: flex;
+                        margin-top: 40px;
+                        a {
+                            margin: 0 !important;
+                            padding: 20px;
+                            transition: .5s;
+                            img {
+                                filter: grayscale(100%) brightness(110%) contrast(5) invert(100%);
+                            }
+                            &:hover img {
+                                filter: none;
+                            }
+                        }
                     }
                 }
             }
@@ -232,13 +194,13 @@ header {
                     a {
                         font-family: $font_muli;
                         position: relative;
-                        font-size: 1.6vw;
+                        font-size: 15px;
                         line-height: 16px;
                         font-weight: 700;
                         text-align: center;
                         color: #265BC5;
                         margin: 0 20px;
-                        padding-bottom: 10px;
+                        padding-bottom: 5px;
                         text-decoration: none;
                         transition: .5s;
                         &::after {
@@ -265,6 +227,15 @@ header {
                             transform: scale(1);
                             background: #EE1F23;
                         }
+                    }
+                }
+            }
+            .contact_res {
+                display: none;
+                a {
+                    padding: 0 7px;
+                    img {
+                        width: 80%;
                     }
                 }
             }

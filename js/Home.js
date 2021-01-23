@@ -45,13 +45,7 @@ $(document).ready(function() {
 
         }
     }).trigger('resize');
-    // $(window).resize(function() {
-    //         var width = $(window).width();
-    //         if (width < 992) {
-    //             $('.containner').removeClass('container');
-    //         }
-    //     })
-    //     .resize();
+
 
     const navMenu = $('#menu_responsive'),
         toggleMenu = $('#opennav'),
@@ -59,10 +53,11 @@ $(document).ready(function() {
 
 
     toggleMenu.click(function() {
-        navMenu.toggleClass("show", "fast");
+        navMenu.toggleClass("show");
     });
     closeMenu.click(function() {
         navMenu.removeClass("show");
     });
+
 
 });

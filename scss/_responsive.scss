@@ -35,15 +35,8 @@
 
 @media (max-width:992px) {
     header {
-        .contact_res {
-            display: flex;
-            width: 100%;
-            margin: 0 auto;
-            background: #F8F8F8;
-            padding: 0 2%;
-        }
         .nav {
-            .containner {
+            .nav_list {
                 width: 95%;
                 padding: 1% 0;
                 justify-content: space-between;
@@ -56,10 +49,10 @@
                     left: 0;
                     img {
                         padding-top: 0;
+                        width: 75%;
                     }
                     p {
-                        font-size: 1.35vw;
-                        padding-bottom: 0;
+                        display: none;
                     }
                 }
                 .contact {
@@ -67,7 +60,20 @@
                 }
                 .menu_res {
                     display: block;
-                    align-self: flex-end;
+                    .container {
+                        a {
+                            margin: 0 13px;
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+                .contact_res {
+                    display: flex;
                 }
             }
         }
@@ -87,6 +93,7 @@
                     }
                     p {
                         font-size: 13px;
+                        text-align: left;
                     }
                     .gr_btn {
                         justify-content: center;
@@ -186,11 +193,37 @@
 
 @media (max-width:768px) {
     header {
+        .nav {
+            .nav_list {
+                justify-content: flex-start;
+                .menu_res {
+                    display: none;
+                }
+                .logo {
+                    img {
+                        width: 17vw;
+                    }
+                    p {
+                        font-size: 2.4vw;
+                    }
+                }
+                .opennav {
+                    display: flex;
+                }
+                .contact_res {
+                    display: none;
+                }
+            }
+        }
         .banner {
             .content {
                 .introduce {
                     div {
                         padding-bottom: 10px;
+                        text-align: left;
+                    }
+                    .gr_btn {
+                        width: fit-content;
                     }
                 }
             }
@@ -249,16 +282,15 @@
                         .img {
                             margin-bottom: 2%;
                             .note {
-                                width: 25vw;
-                                padding: 2vw;
-                                text-align: center;
+                                width: 50%;
+                                padding: 15px 10px;
                                 p {
-                                    text-align: center;
-                                    font-size: 1.5vw;
+                                    font-size: 12px;
                                 }
                                 .name {
-                                    text-align: center;
-                                    font-size: 2vw;
+                                    padding-bottom: 2px;
+                                    font-size: 15px;
+                                    line-height: 30px;
                                 }
                             }
                         }
@@ -328,28 +360,6 @@
 
 @media (max-width:576px) {
     header {
-        .contact_res {
-            display: none;
-        }
-        .nav {
-            .containner {
-                justify-content: center;
-                .menu_res {
-                    display: none;
-                }
-                .logo {
-                    img {
-                        width: 17vw;
-                    }
-                    p {
-                        font-size: 2.4vw;
-                    }
-                }
-                .opennav {
-                    display: flex;
-                }
-            }
-        }
         .banner {
             .content {
                 .introduce {
@@ -437,6 +447,22 @@
                 }
             }
         }
+        .customer {
+            .container {
+                .slide_cus {
+                    .cus {
+                        .img {
+                            .note {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .partner {
+            display: none;
+        }
     }
     footer {
         .ft {
@@ -456,6 +482,14 @@
                 .list {
                     ul li {
                         display: inline-block;
+                        padding-right: 15px;
+                    }
+                }
+                .contact {
+                    form {
+                        input {
+                            width: 100%;
+                        }
                     }
                 }
             }
