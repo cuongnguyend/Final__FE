@@ -1359,21 +1359,23 @@ footer {
   main .about_us .container .img {
     justify-content: center; }
     main .about_us .container .img img {
-      width: 66vw; }
+      width: 80vw; }
     main .about_us .container .img .note {
       width: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-  main .about_us .container .content div .title {
-    font-size: 30px;
-    text-transform: uppercase; }
-  main .about_us .container .content div p {
-    text-align: left; }
-  main .about_us .container .content div .auth {
-    padding-bottom: 0;
-    text-align: center; }
-  main .about_us .container .content div .gr_btn {
-    padding: 10px 27px; }
+  main .about_us .container .content {
+    padding-top: 5%; }
+    main .about_us .container .content div .title {
+      font-size: 30px;
+      text-transform: uppercase; }
+    main .about_us .container .content div p {
+      text-align: left; }
+    main .about_us .container .content div .auth {
+      padding-bottom: 0;
+      text-align: center; }
+    main .about_us .container .content div .gr_btn {
+      padding: 10px 27px; }
   main .customer .container .slide_cus .cus .img {
     padding: 0 !important; }
     main .customer .container .slide_cus .cus .img .note {
